@@ -1,0 +1,384 @@
+/* General Page Styling */
+
+body {
+   font-family: 'Inconsolata', monospace;
+    background-color: #08051B;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+
+header {
+    background-color: #15102F;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h2 {
+    color: #FF8066;
+    font-size: 28px;
+}
+
+/* Main Content Styling */
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 40px;
+    color: white;
+}
+
+main p {
+    font-size: 18px;
+    color: #D8D5E8;
+}
+
+/* Registration Link Styling */
+
+main a {
+    display: inline-block;
+    background-color: #FF8066;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Registration Form Styling */
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+form label {
+    display: block;
+    margin: 10px 0;
+}
+
+form input {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+/* Generate Ticket Button Styling */
+
+form button {
+    background-color: #FF8066;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px 15px;
+    }
+
+    main h1 {
+        font-size: 30px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    form input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+}
+
+
+/* =================================
+   CODING CONF - TICKET PAGE
+================================= */
+
+.ticket-page {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #f5f5f5;
+    background-image: url("../assets/background-desktop.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Header */
+
+.ticket-header {
+    background: #15102d;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #30204c;
+}
+
+.ticket-header h2 {
+    color: #ff806e;
+    font-size: 25px;
+    margin: 0;
+}
+
+/* Main section */
+
+.ticket-main {
+    width: 90%;
+    max-width: 850px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+/* Congratulations message */
+
+.ticket-intro h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.ticket-intro h1 span {
+    color: #ff806e;
+}
+
+.ticket-intro h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.ticket-intro p {
+    color: #c8bfdc;
+    line-height: 1.7;
+    max-width: 550px;
+    margin: 20px auto 45px;
+}
+
+/* Ticket card */
+
+/* Ticket card */
+.conference-ticket {
+    background: linear-gradient(120deg, #25203f, #522477);
+    border: 2px solid #bd8eac;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+
+clip-path: polygon(
+    0 0,
+    82% 0,
+    85% 1%,
+    88% 4%,
+    92% 4%,
+    95% 1%,
+    98% 0,
+    100% 0,
+    100% 100%,
+    98% 100%,
+    95% 99%,
+    92% 96%,
+    88% 96%,
+    85% 99%,
+    82% 100%,
+    0 100%
+);
+  }
+
+/* Ticket heading */
+
+.ticket-top h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0 0 8px;
+}
+
+.ticket-top p {
+    color: #d1c3df;
+    font-size: 13px;
+}
+
+/* Divider */
+
+.ticket-divider {
+    border-top: 1px dashed #bd8eac;
+    margin: 25px 0;
+}
+
+/* Attendee details */
+
+.ticket-details {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    position: relative;
+}
+
+/* Profile picture */
+
+.ticket-details img {
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ff806e;
+}
+
+.attendee-details h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.attendee-details p {
+    color: #d1c3df;
+    font-size: 13px;
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+}
+
+/* Ticket number */
+
+.ticket-number {
+    margin-left: auto;
+    color: #ffad9f;
+    font-size: 17px;
+    writing-mode: vertical-rl;
+    border-left: 1px dashed #bd8eac;
+    padding-left: 18px;
+}
+
+/* Back link */
+
+.back-link {
+    display: inline-block;
+    margin-top: 35px;
+    color: #ff806e;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.ticket-footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa0bd;
+    font-size: 13px;
+}
+
+/* Mobile screen */
+
+@media (max-width: 600px) {
+
+    .ticket-main {
+        margin: 40px auto;
+    }
+
+    .ticket-intro h1 {
+        font-size: 27px;
+    }
+
+    .ticket-intro h2 {
+        font-size: 23px;
+    }
+
+    .conference-ticket {
+        padding: 20px;
+    }
+
+    .ticket-details {
+        gap: 10px;
+    }
+
+    .ticket-details img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .attendee-details h3 {
+        font-size: 16px;
+    }
+
+    .attendee-details p {
+        font-size: 11px;
+    }
+}
+/* Ticket Page Background Decorations */
+
+body.ticket-page {
+    background-image: url("../assets/background-desktop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+/* Background Decorative Images */
+
+.ticket-page {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.decoration {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.top-line {
+    top: 0;
+    right: 0;
+    width: 300px;
+}
+.bottom-line {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    width: 450px;
+}
+
+.ticket-header,
+.ticket-main,
+.ticket-footer {
+    position: relative;
+    z-index: 1;
+}
+/* Circular Background Decoration */
+.pattern-circle {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 217px;
+    height: 217px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.pattern-circle-right {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 217px;
+    height: 217px;
+    z-index: 0;
+    pointer-events: none;
+}
